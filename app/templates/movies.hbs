@@ -1,0 +1,13 @@
+{{outlet}}
+
+<h3>Add new movie</h3>
+
+{{new-movie createNewMovie='createMovie'}} {{! Bind the controller's createMovie action to the template's createNewMovie}}
+
+<h3>{{title}}</h3>
+
+{{#each movie in model}}
+  <p>Title: {{movie.title}}</p>
+  <p>Rating: {{movie.rating}}</p>
+  <p>Director: {{movie.director}}</p>
+{{/each}}
