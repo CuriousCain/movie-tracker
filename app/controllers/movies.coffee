@@ -8,7 +8,6 @@ moviesController = Ember.Controller.extend
         title: movieTitle,
         rating: movieRating
         director: movieDirector
-      return
 
   generateNewId: ->
     mostRecentObject = this.store.all('movie').get 'lastObject'
